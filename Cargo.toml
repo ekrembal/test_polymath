@@ -1,0 +1,30 @@
+[package]
+name = "test_polymath"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-bn254 = { version = "0.4.0", default-features = false, features = ["curve"] }
+ark-crypto-primitives = { version = "0.4.0" }
+ark-relations = { version = "0.4.0" }
+sigma0-polymath = { git = "https://github.com/sigma0-xyz/polymath"}
+ark-std = { version = "=0.4.0", default-features = false }
+ark-circom = { git = "https://github.com/RajeshRk18/circom-compat", branch = "upgrade-ark-deps" }
+num-bigint = "0.4.3"
+
+
+# num-traits = "=0.2.15"
+# ark-ec = { version = "=0.4.2" }  # Align `ark-ec` to version `0.4.2`
+
+[patch.crates-io]
+ark-ff = { git = "https://github.com/arkworks-rs/algebra" }
+ark-ec = { git = "https://github.com/arkworks-rs/algebra" }
+ark-poly = { git = "https://github.com/arkworks-rs/algebra" }
+ark-serialize = { git = "https://github.com/arkworks-rs/algebra" }
+ark-bn254 = { git = "https://github.com/arkworks-rs/algebra" }
+# ark-bn254 = { git = "https://github.com/arkworks-rs/algebra" }
+# ark-r1cs-std = { git = "https://github.com/arkworks-rs/r1cs-std" }
+ark-crypto-primitives = { git = "https://github.com/arkworks-rs/crypto-primitives"}
+ark-relations = { git = "https://github.com/arkworks-rs/snark" }
+ark-snark = { git = "https://github.com/arkworks-rs/snark"}
+ark-groth16 = { git = "https://github.com/arkworks-rs/groth16"}
